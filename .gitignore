@@ -1,0 +1,31 @@
+# Build output
+bin/
+obj/
+
+# SQLite databases
+*.sqlite
+*.sqlite3
+*.db
+
+# JetBrains Rider
+.idea/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+nuget.config
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
