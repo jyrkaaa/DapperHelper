@@ -5,7 +5,7 @@ using Models.Entities;
 
 namespace DAL.EF;
 
-public class UserRepository(AppDbContext context) : IUserRepository
+public class EfCoreUserRepository(AppDbContext context) : IUserRepository
 {
     public async Task<IEnumerable<UserEntity>> GetAllAsync()
     {

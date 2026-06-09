@@ -6,7 +6,7 @@ using QueryLib;
 
 namespace DAL.Repositories;
 
-public class UserRepository(IDbConnectionFactory connectionFactory) : IUserRepository
+public class DapperHelperUserRepository(IDbConnectionFactory connectionFactory) : IUserRepository
 {
     public async Task<IEnumerable<UserEntity>> GetAllAsync()
     {

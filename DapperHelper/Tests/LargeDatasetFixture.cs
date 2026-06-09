@@ -33,6 +33,9 @@ public class LargeDatasetFixture : IAsyncLifetime
     public IDbConnectionFactory CreateConnectionFactory() =>
         new SqliteConnectionFactory(ConnectionString);
 
+    public DAL.RawDapper.IDbConnectionFactory CreateRawDapperConnectionFactory() =>
+        new DAL.RawDapper.SqliteConnectionFactory(ConnectionString);
+
     public async Task InitializeAsync()
     {
         _keepAlive = new SqliteConnection(ConnectionString);

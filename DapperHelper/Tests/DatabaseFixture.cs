@@ -33,6 +33,9 @@ public class DatabaseFixture : IAsyncLifetime
     public IDbConnectionFactory CreateConnectionFactory() =>
         new SqliteConnectionFactory(ConnectionString);
 
+    public DAL.RawDapper.IDbConnectionFactory CreateRawDapperConnectionFactory() =>
+        new DAL.RawDapper.SqliteConnectionFactory(ConnectionString);
+
     public async Task InitializeAsync()
     {
         // Keep this connection open for the entire fixture lifetime.

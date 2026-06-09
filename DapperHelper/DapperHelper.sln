@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
+#
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperHelper", "DapperHelper\DapperHelper.csproj", "{F073C37A-28AE-4060-AB8E-DCE4C38C6B05}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{EB8E54E5-04B4-4CCC-A406-E7E82BE99818}"
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.EF", "DAL.EF\DAL.EF.csproj", "{A2771BC8-B2B1-43EA-81F8-AE7D72480C3C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{CC38CAB2-0152-4C80-BB21-9FE7C50A4F94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.JustDapper", "DAL.JustDapper\DAL.JustDapper.csproj", "{DDED1589-619A-4B9B-B643-C42DDB5BA2E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,5 +57,9 @@ Global
 		{CC38CAB2-0152-4C80-BB21-9FE7C50A4F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC38CAB2-0152-4C80-BB21-9FE7C50A4F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC38CAB2-0152-4C80-BB21-9FE7C50A4F94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDED1589-619A-4B9B-B643-C42DDB5BA2E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDED1589-619A-4B9B-B643-C42DDB5BA2E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDED1589-619A-4B9B-B643-C42DDB5BA2E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDED1589-619A-4B9B-B643-C42DDB5BA2E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

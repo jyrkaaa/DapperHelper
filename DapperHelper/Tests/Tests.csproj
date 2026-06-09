@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj" />
     <ProjectReference Include="..\DAL.EF\DAL.EF.csproj" />
+    <ProjectReference Include="..\DAL.RawDApper\DAL.RawDApper.csproj" />
     <ProjectReference Include="..\DAL.Contracts\DAL.Contracts.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>

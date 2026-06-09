@@ -14,7 +14,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
 // DI
-builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserRepository, DapperHelperUserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();

@@ -8,8 +8,7 @@ missing quote, or a renamed property only fails at runtime. This project solves 
 fluent, expression-driven API (`QueryLib`) that constructs parameterised SQL from C# lambda
 expressions, so the compiler catches mistakes before the query ever runs.
 
-The query builder lives alongside a full EF Core implementation of the same repository interface,
-which makes a direct apples-to-apples performance comparison possible.
+The query builder lives alongside an EF Core implementation and a Raw Dapper implementation (hand-written SQL, no abstraction) of the same repository interface, making a direct three-way performance comparison possible.
 
 ---
 
@@ -60,38 +59,41 @@ to any Dapper method (`QueryAsync`, `QuerySingleOrDefaultAsync`, etc.).
 
 ## Performance test results
 
-Eight timed tests compare EF Core against Dapper+QueryLib across two fixtures:
+Eight timed tests compare EF Core, Dapper+QueryLib, and Raw Dapper across two fixtures:
 
 - **Small fixture**: 2 users, 50 timed iterations per test.
 - **Large fixture**: 100 000 users, 3–20 timed iterations per test.
 
 ### Small dataset (2 rows)
 
-| Operation | EF Core ms/call | Dapper ms/call | Winner |
+| Operation | EF Core ms/call | Dapper+QueryLib ms/call | Raw Dapper ms/call |
 |---|---|---|---|
-| `GetAllAsync` | 0.196 | 0.027 | Dapper **7.3×** faster |
-| `GetByIdAsync` | 0.245 | 0.092 | Dapper **2.7×** faster |
-| `GetByCredentialAsync` | 0.277 | 0.150 | Dapper **1.9×** faster |
-| `GetUserWithTenants` | 0.391 | 0.124 | Dapper **3.1×** faster |
+| `GetAllAsync` | 0.568 | 0.112 | 0.087 |
+| `GetByIdAsync` | 0.303 | 0.144 | 0.044 |
+| `GetByCredentialAsync` | 0.381 | 0.142 | 0.028 |
+| `GetUserWithTenants` | 0.563 | 0.164 | 0.032 |
+
+Raw Dapper wins all four. EF Core is 5–17× slower than Raw Dapper and 2–5× slower than Dapper+QueryLib.
 
 ### Large dataset (100 000 rows)
 
-| Operation | EF Core ms/call | Dapper ms/call | Winner |
+| Operation | EF Core ms/call | Dapper+QueryLib ms/call | Raw Dapper ms/call |
 |---|---|---|---|
-| `GetAllAsync` | 263.76 | 143.49 | Dapper **1.8×** faster |
-| `GetByIdAsync` | 0.18 | 0.08 | Dapper **2.3×** faster |
-| `GetByCredentialAsync` | 2.17 | 3.93 | EF Core **1.8×** faster |
-| `GetUserWithTenants` | 0.40 | 0.10 | Dapper **3.9×** faster |
+| `GetAllAsync` | 284.98 | 169.40 | 168.76 |
+| `GetByIdAsync` | 0.29 | 0.10 | 0.02 |
+| `GetByCredentialAsync` | 2.35 | 4.03 | 3.67 |
+| `GetUserWithTenants` | 0.33 | 0.12 | 0.03 |
 
-Dapper wins 7 of 8 scenarios. The one EF Core win (`GetByCredentialAsync` on 100k rows) is not a
-fundamental EF advantage — EF Core's `FirstOrDefaultAsync` emits `LIMIT 1` so SQLite stops at the
-first match, whereas the current QueryLib build does not append `LIMIT 1` for single-row reads and
-causes a full table scan. Adding `.Take(1)` to that query would close the gap.
+Raw Dapper wins three of four large-dataset scenarios. EF Core wins only `GetByCredentialAsync`,
+which is not a fundamental EF advantage — EF Core's `FirstOrDefaultAsync` emits `LIMIT 1` so
+SQLite stops at the first match, whereas neither Dapper path appends `LIMIT 1`, forcing a full
+table scan. Adding `.Take(1)` would close that gap.
 
-The largest absolute gap is the full-table load: Dapper materialises 100 000 rows in ~143 ms vs EF
-Core's ~264 ms, because EF Core runs every row through its change-tracker and identity-resolution
-pipeline. The largest ratio is the 2-row `GetAllAsync` (7.3×), where query execution time is near
-zero and the entire difference is EF Core's fixed per-query startup cost.
+The largest absolute gap is the full-table load: both Dapper variants materialise 100 000 rows in
+~169 ms vs EF Core's ~285 ms, because EF Core runs every row through its change-tracker and
+identity-resolution pipeline. On bulk loads the QueryLib abstraction adds no measurable overhead
+over raw SQL. For fast single-row lookups the QueryLib's `Build()` call is visible (e.g. 0.10 ms
+vs 0.02 ms for a PK lookup), though both remain well under 1 ms.
 
 ---
 
@@ -99,8 +101,9 @@ zero and the entire difference is EF Core's fixed per-query startup cost.
 
 ```
 QueryLib/          — the Dapper query builder (ISqlDialect, QueryBuilder, JoinedQueryBuilder, ExpressionParser, …)
-DAL/               — Dapper-based UserRepository using QueryLib
-DAL.EF/            — EF Core UserRepository for comparison
+DAL/               — Dapper+QueryLib UserRepository
+DAL.EF/            — EF Core UserRepository
+DAL.RawDApper/     — Raw Dapper UserRepository (hand-written SQL, no abstraction)
 DAL.Contracts/     — shared IUserRepository interface
 Models/            — entities and DTOs
 Tests/             — performance and correctness tests (xUnit, SQLite in-memory)
