@@ -1,0 +1,12 @@
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/obj/Debug/net9.0/QueryLib.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/obj/Debug/net9.0/QueryLib.AssemblyInfoInputs.cache
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/obj/Debug/net9.0/QueryLib.AssemblyInfo.cs
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/obj/Debug/net9.0/QueryLib.csproj.CoreCompileInputs.cache
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/bin/Debug/net9.0/QueryLib.deps.json
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/bin/Debug/net9.0/QueryLib.dll
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/bin/Debug/net9.0/QueryLib.pdb
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/obj/Debug/net9.0/QueryLib.csproj.AssemblyReference.cache
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/obj/Debug/net9.0/QueryLib.dll
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/obj/Debug/net9.0/refint/QueryLib.dll
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/obj/Debug/net9.0/QueryLib.pdb
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/obj/Debug/net9.0/ref/QueryLib.dll

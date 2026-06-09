@@ -1,0 +1,440 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Tests/Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/DAL.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/DAL.Contracts.csproj",
+        "projectName": "DAL.Contracts",
+        "projectPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/DAL.Contracts.csproj",
+        "packagesPath": "/Users/jurgenkuusik/.nuget/packages/",
+        "outputPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jurgenkuusik/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Models/Models.csproj": {
+                "projectPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Models/Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.EF/DAL.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.EF/DAL.EF.csproj",
+        "projectName": "DAL.EF",
+        "projectPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.EF/DAL.EF.csproj",
+        "packagesPath": "/Users/jurgenkuusik/.nuget/packages/",
+        "outputPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.EF/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jurgenkuusik/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/DAL.Contracts.csproj": {
+                "projectPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/DAL.Contracts.csproj"
+              },
+              "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Models/Models.csproj": {
+                "projectPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Models/Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL/DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL/DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL/DAL.csproj",
+        "packagesPath": "/Users/jurgenkuusik/.nuget/packages/",
+        "outputPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jurgenkuusik/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/DAL.Contracts.csproj": {
+                "projectPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/DAL.Contracts.csproj"
+              },
+              "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Models/Models.csproj": {
+                "projectPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Models/Models.csproj"
+              },
+              "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/QueryLib.csproj": {
+                "projectPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/QueryLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Models/Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Models/Models.csproj",
+        "projectName": "Models",
+        "projectPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Models/Models.csproj",
+        "packagesPath": "/Users/jurgenkuusik/.nuget/packages/",
+        "outputPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Models/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jurgenkuusik/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/QueryLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/QueryLib.csproj",
+        "projectName": "QueryLib",
+        "projectPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/QueryLib.csproj",
+        "packagesPath": "/Users/jurgenkuusik/.nuget/packages/",
+        "outputPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/QueryLib/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jurgenkuusik/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Tests/Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Tests/Tests.csproj",
+        "projectName": "Tests",
+        "projectPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Tests/Tests.csproj",
+        "packagesPath": "/Users/jurgenkuusik/.nuget/packages/",
+        "outputPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jurgenkuusik/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/DAL.Contracts.csproj": {
+                "projectPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/DAL.Contracts.csproj"
+              },
+              "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.EF/DAL.EF.csproj": {
+                "projectPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.EF/DAL.EF.csproj"
+              },
+              "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL/DAL.csproj": {
+                "projectPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL/DAL.csproj"
+              },
+              "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Models/Models.csproj": {
+                "projectPath": "/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/Models/Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.11.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/bin/Debug/net9.0/DAL.Contracts.deps.json
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/bin/Debug/net9.0/DAL.Contracts.dll
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/bin/Debug/net9.0/DAL.Contracts.pdb
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/bin/Debug/net9.0/Models.dll
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/bin/Debug/net9.0/Models.pdb
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/obj/Debug/net9.0/DAL.Contracts.csproj.AssemblyReference.cache
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/obj/Debug/net9.0/DAL.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/obj/Debug/net9.0/DAL.Contracts.AssemblyInfoInputs.cache
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/obj/Debug/net9.0/DAL.Contracts.AssemblyInfo.cs
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/obj/Debug/net9.0/DAL.Contracts.csproj.CoreCompileInputs.cache
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/obj/Debug/net9.0/DAL.Cont.8218DE71.Up2Date
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/obj/Debug/net9.0/DAL.Contracts.dll
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/obj/Debug/net9.0/refint/DAL.Contracts.dll
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/obj/Debug/net9.0/DAL.Contracts.pdb
+/Users/jurgenkuusik/GitHub/DapperHelper/DapperHelper/DAL.Contracts/obj/Debug/net9.0/ref/DAL.Contracts.dll
